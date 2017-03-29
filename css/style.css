@@ -1,0 +1,23 @@
+body {
+  color: #000;
+  font-size: 16px;
+  font-family: arial, helvetica, sans-serif;
+  background: green;
+}
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.block {
+  width: 5px;
+  height: 5px;
+  background: #111111;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
