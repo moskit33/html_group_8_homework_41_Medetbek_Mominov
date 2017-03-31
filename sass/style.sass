@@ -2,6 +2,10 @@ $greenColor: #63c6ae
 
 $darkGreyColor: #242a2c
 
+$darkGreyText: #737d84
+
+$greyLightColor: #f8f8f8
+
 $sintony: 'Sintony', sans-serif
 
 =btn
@@ -15,6 +19,10 @@ $sintony: 'Sintony', sans-serif
  font-weight: 700
  font-size: 20px
 
+=textTitle
+ font-size: 21px
+ color: $darkGreyText
+ font-weight: 400
 
 body
  font-family: 'Myriad Pro', helvetica, sans-serif
@@ -112,9 +120,8 @@ body
 //Banner-block
 .banner 
  text-align: center 
- background: url(../images/banner_img.jpg) 0 0 no-repeat
+ background: url(../images/banner_img.jpg) 46% 32% no-repeat
  padding: 18% 0 12%
- //background-size: 100%
 
 
 
@@ -144,9 +151,6 @@ body
  //width: 100%
  //max-width: 520px
  margin-top: 15px
-.info__container
-
-.info__text
 
 
 .banner__btn
@@ -157,17 +161,47 @@ body
 
 
  //Post block
-.post-wrap
+.post__wrap
  position: relative
  padding: 40px 0 103px
-.post-wrap::before
+.post__wrap::before
  content: ''
  position: absolute
  top: -30px
- left: 46%
+ left: 49%
  z-index: 24
  width: 0
  height: 0
  border-style: solid
  border-width: 0 26px 30px 26px
  border-color: transparent transparent #ffffff transparent
+
+//.post__block
+// width: 100%
+// max-width: 280px
+.post__image
+ display: block
+.post__image .image__img
+ width: 100%
+ height: auto
+ display: block
+.post__avatar
+ display: block
+ text-align: center
+ border-radius: 50%
+ width: 88px
+ height: 88px
+ border: 4px solid $greyLightColor
+ overflow: hidden
+ top: -60px
+ left: 35%
+ position: relative
+.post__avatar .avatar__img
+ width: 100%
+ height: auto
+ max-width: 80px
+.post__title
+ padding: 0 32px
+ -webkit-box-sizing: border-box
+ -moz-box-sizing: border-box
+ box-sizing: border-box
