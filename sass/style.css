@@ -155,6 +155,15 @@ body {
   border-width: 0 26px 30px 26px;
   border-color: transparent transparent #ffffff transparent; }
 
+.post__block {
+  padding-bottom: 49px;
+  border-left: 1px solid #dbe1e7; }
+
+.post__block:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 10px #63c6ae;
+  -moz-box-shadow: inset 0px 0px 0px 10px #63c6ae;
+  box-shadow: inset 0px 0px 0px 10px #63c6ae; }
+
 .post__image {
   display: block; }
 
@@ -181,6 +190,19 @@ body {
   max-width: 80px; }
 
 .post__title {
+  font-size: 21px;
+  color: #737d84;
+  font-weight: 400;
+  padding: 0 32px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: -44px 0 20px; }
+
+.post__text {
+  color: #929da5;
+  font-size: 14px;
+  line-height: 1.7;
   padding: 0 32px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

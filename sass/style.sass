@@ -19,10 +19,22 @@ $sintony: 'Sintony', sans-serif
  font-weight: 700
  font-size: 20px
 
-=textTitle
+=articleTitle
  font-size: 21px
  color: $darkGreyText
  font-weight: 400
+
+
+=articleText
+ color: #929da5
+ font-size: 14px
+ line-height: 1.7
+
+=postContainer
+ padding: 0 32px
+ -webkit-box-sizing: border-box
+ -moz-box-sizing: border-box
+ box-sizing: border-box
 
 body
  font-family: 'Myriad Pro', helvetica, sans-serif
@@ -116,13 +128,11 @@ body
 .navigation__item:active
  color: $greenColor
 
-
 //Banner-block
 .banner 
  text-align: center 
  background: url(../images/banner_img.jpg) 46% 32% no-repeat
  padding: 18% 0 12%
-
 
 
 .banner__title
@@ -135,8 +145,6 @@ body
  text-transform: uppercase
 .banner__title .title__text
  font-weight: 400
-
-
 
 .banner__info
  display: inline-block
@@ -176,9 +184,13 @@ body
  border-width: 0 26px 30px 26px
  border-color: transparent transparent #ffffff transparent
 
-//.post__block
-// width: 100%
-// max-width: 280px
+.post__block
+ padding-bottom: 49px
+ border-left: 1px solid #dbe1e7
+.post__block:hover
+ -webkit-box-shadow: inset 0px 0px 0px 10px rgba(99, 198, 174, 1)
+ -moz-box-shadow:    inset 0px 0px 0px 10px rgba(99, 198, 174, 1)
+ box-shadow:         inset 0px 0px 0px 10px rgba(99, 198, 174, 1)
 .post__image
  display: block
 .post__image .image__img
@@ -201,7 +213,10 @@ body
  height: auto
  max-width: 80px
 .post__title
- padding: 0 32px
- -webkit-box-sizing: border-box
- -moz-box-sizing: border-box
- box-sizing: border-box
+ +articleTitle
+ +postContainer
+ margin: -44px 0 20px
+
+.post__text
+ +articleText
+ +postContainer
